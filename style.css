@@ -1,0 +1,82 @@
+body {
+    font-family: 'Inconsolata', monospace;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.quiz-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.question-container {
+    margin-bottom: 20px;
+}
+
+.question {
+    font-weight: bold;
+}
+
+button {
+    padding: 5px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    justify-content: space-between;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* MINE CSS  */
+
+h2{
+    position: relative;
+    display: inline-block;
+    margin-right: 18rem;
+}
+
+
+hr{
+    opacity: 0.3;
+}
+
+.badge {
+    max-width: 100px;
+}
+
+.btns{
+    display: flex;
+    justify-content: space-around;
+}
+
+.scores{
+    background-color: #f4f4f4;
+    width: 60px;
+    height: 25px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.no-pointer{
+    cursor: default !important;
+    border-color: inherit !important;
+    border: inherit  !important;
+    font-weight: 800;
+}
+.no-pointer:hover{
+    background-color: inherit !important;
+    color: inherit !important;
+    border-color: inherit !important;
+    border: inherit  !important;
+}
+
+/* PROJECT ENDS  */
