@@ -1,62 +1,96 @@
+/* Base Styling */
 body {
     font-family: 'Inconsolata', monospace;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
 }
 
+/* Container Styling */
 .quiz-container {
     max-width: 600px;
     margin: 50px auto;
     padding: 20px;
     background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: all 0.3s ease;
 }
 
+.quiz-container:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Question Styling */
 .question-container {
     margin-bottom: 20px;
 }
 
 .question {
     font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 10px;
 }
 
+/* Button Styling */
 button {
-    padding: 5px 20px;
+    padding: 10px 20px;
     background-color: #007BFF;
     color: #fff;
     border: none;
     cursor: pointer;
-    justify-content: space-between;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 button:hover {
     background-color: #0056b3;
+    transform: translateY(-2px);
 }
 
-/* MINE CSS  */
+button:active {
+    transform: translateY(0);
+}
 
-h2{
+/* Header Styling */
+h2 {
     position: relative;
     display: inline-block;
     margin-right: 18rem;
+    font-size: 1.5em;
+    margin-bottom: 10px;
 }
 
-
-hr{
+/* Horizontal Rule Styling */
+hr {
     opacity: 0.3;
+    margin-bottom: 20px;
 }
 
+/* Badge Styling */
 .badge {
     max-width: 100px;
+    background-color: #007BFF;
+    color: #fff;
+    border-radius: 12px;
+    padding: 5px 10px;
+    font-size: 0.8em;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
-.btns{
+/* Button Group Styling */
+.btns {
     display: flex;
     justify-content: space-around;
+    margin-top: 20px;
 }
 
-.scores{
+/* Score Display Styling */
+.scores {
     background-color: #f4f4f4;
     width: 60px;
     height: 25px;
@@ -64,19 +98,44 @@ hr{
     font-size: 13px;
     font-weight: 600;
     text-align: center;
+    line-height: 25px;
+    margin-bottom: 20px;
 }
 
-.no-pointer{
+/* Disabled Button Styling */
+.no-pointer {
     cursor: default !important;
     border-color: inherit !important;
-    border: inherit  !important;
+    border: inherit !important;
     font-weight: 800;
 }
-.no-pointer:hover{
+
+.no-pointer:hover {
     background-color: inherit !important;
     color: inherit !important;
     border-color: inherit !important;
-    border: inherit  !important;
+    border: inherit !important;
 }
 
-/* PROJECT ENDS  */
+/* Responsive Design */
+@media (max-width: 600px) {
+    .quiz-container {
+        padding: 15px;
+    }
+
+    h2 {
+        margin-right: 0;
+        font-size: 1.2em;
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+        font-size: 0.9em;
+    }
+
+    .btns {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
