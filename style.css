@@ -38,7 +38,7 @@ h2 {
     text-align: center;
     margin-bottom: 20px;
     font-weight: 600;
-    margin-left: 3rem;
+    margin-left: 4rem;
 }
 
 
@@ -106,7 +106,7 @@ button:active {
     font-size: 0.9em;
     text-align: center;
     margin-bottom: 10px;
-    margin-right: 1rem;
+    margin-left: 1rem;
 }
 
 /* Button Group Styling */
