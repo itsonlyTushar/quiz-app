@@ -98,15 +98,15 @@ button:active {
 
 /* Badge Styling */
 .badge {
-    max-width: 100px;
+    width: 60px;
     background-color: #8f9293;
     color: #fff;
     border-radius: 12px;
     padding: 5px 10px;
     font-size: 0.9em;
     text-align: center;
+    align-items: center;
     margin-bottom: 10px;
-    margin-left: 1rem;
 }
 
 /* Button Group Styling */
