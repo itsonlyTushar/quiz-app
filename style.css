@@ -1,82 +1,169 @@
+/* Base Styling */
 body {
-    font-family: 'Inconsolata', monospace;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #e0e0e0;
+    background-image: url(https://th.bing.com/th/id/R.077d2d3218e7aa95d1a84ffeb8e3c37f?rik=FxxXrjlkMIZJ9A&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fEEozfjG.jpg&ehk=anrzqVadGoW3km3KNitQbZx7Ct2SZ%2f1AijmnUilau7A%3d&risl=&pid=ImgRaw&r=0);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
+#time {
+    margin-right: 4rem;
+    padding-left: 0.5rem;
+    padding-right: 0.8rem;
+}
+/* Container Styling */
 .quiz-container {
     max-width: 600px;
-    margin: 50px auto;
+    margin: 20px;
     padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease;
 }
 
+.quiz-container:hover {
+    box-shadow: 0 6px 35px rgba(0, 0, 0, 0.2);
+}
+
+/* Header Styling */
+h2 {
+    font-size: 2em;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 600;
+    margin-right: 3rem;
+}
+
+/* Horizontal Rule Styling */
+hr {
+    opacity: 0.3;
+    margin-bottom: 20px;
+    border: none;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #00d2ff, transparent);
+}
+
+/* Question Styling */
 .question-container {
     margin-bottom: 20px;
 }
 
 .question {
-    font-weight: bold;
+    font-weight: 500;
+    font-size: 1.3em;
+    margin-bottom: 15px;
+    color: #f4f4f4;
 }
 
+/* Input and Label Styling */
+input[type="radio"] {
+    margin-right: 10px;
+    accent-color: #00d2ff;
+    transform: scale(1.2);
+}
+
+label {
+    color: #ffffff;
+    font-size: 1.1em;
+}
+
+/* Button Styling */
 button {
-    padding: 5px 20px;
-    background-color: #007BFF;
-    color: #fff;
-    border: none;
+    padding: 10px 20px;
+    background: rgba(47, 22, 22, 0.2);
+    color: #00d2ff;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 25px;
     cursor: pointer;
-    justify-content: space-between;
+    font-size: 1em;
+    transition: background 0.3s ease, transform 0.3s ease;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
 }
 
-/* MINE CSS  */
-
-h2{
-    position: relative;
-    display: inline-block;
-    margin-right: 18rem;
+button:active {
+    transform: translateY(0);
 }
 
-
-hr{
-    opacity: 0.3;
-}
-
+/* Badge Styling */
 .badge {
     max-width: 100px;
+    background-color: #8f9293;
+    color: #fff;
+    border-radius: 12px;
+    padding: 5px 10px;
+    font-size: 0.9em;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
-.btns{
+/* Button Group Styling */
+.btns {
     display: flex;
     justify-content: space-around;
+    margin-top: 20px;
 }
 
-.scores{
-    background-color: #f4f4f4;
+/* Score Display Styling */
+.scores {
+    background: rgba(255, 255, 255, 0.1);
     width: 60px;
     height: 25px;
     border-radius: 20px;
-    font-size: 13px;
+    font-size: 1em;
     font-weight: 600;
     text-align: center;
+    line-height: 25px;
+    margin-bottom: 20px;
+    color: #00d2ff;
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.no-pointer{
+/* Disabled Button Styling */
+.no-pointer {
     cursor: default !important;
-    border-color: inherit !important;
-    border: inherit  !important;
-    font-weight: 800;
-}
-.no-pointer:hover{
-    background-color: inherit !important;
-    color: inherit !important;
-    border-color: inherit !important;
-    border: inherit  !important;
+    background: rgba(255, 255, 255, 0.2) !important;
+    color: #00d2ff !important;
 }
 
-/* PROJECT ENDS  */
+.no-pointer:hover {
+    background: rgba(255, 255, 255, 0.2) !important;
+    color: #00d2ff !important;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .quiz-container {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+        font-size: 0.9em;
+    }
+
+    .btns {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
