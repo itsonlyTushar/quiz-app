@@ -38,7 +38,9 @@ h2 {
     text-align: center;
     margin-bottom: 20px;
     font-weight: 600;
+    margin-right: 3rem;
 }
+
 
 /* Horizontal Rule Styling */
 hr {
@@ -104,6 +106,7 @@ button:active {
     font-size: 0.9em;
     text-align: center;
     margin-bottom: 10px;
+    margin-right: 1rem;
 }
 
 /* Button Group Styling */
