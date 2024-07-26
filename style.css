@@ -3,11 +3,17 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
+<<<<<<< HEAD
     background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+=======
+    background-color: #121212;
+    color: #f4f4f4;
+>>>>>>> eb6a04b1f80324e536804c0100bd3cfeb25effbf
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+<<<<<<< HEAD
     color: #e0e0e0;
     background-image: url(https://th.bing.com/th/id/R.077d2d3218e7aa95d1a84ffeb8e3c37f?rik=FxxXrjlkMIZJ9A&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fEEozfjG.jpg&ehk=anrzqVadGoW3km3KNitQbZx7Ct2SZ%2f1AijmnUilau7A%3d&risl=&pid=ImgRaw&r=0);
     background-repeat: no-repeat;
@@ -19,20 +25,31 @@ body {
     padding-left: 0.5rem;
     padding-right: 0.8rem;
 }
+=======
+}
+
+>>>>>>> eb6a04b1f80324e536804c0100bd3cfeb25effbf
 /* Container Styling */
 .quiz-container {
     max-width: 600px;
     margin: 20px;
     padding: 20px;
+<<<<<<< HEAD
     background: rgba(255, 255, 255, 0.1);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
     border-radius: 15px;
     border: 1px solid rgba(255, 255, 255, 0.3);
+=======
+    background-color: #1f1f1f;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+>>>>>>> eb6a04b1f80324e536804c0100bd3cfeb25effbf
     transition: all 0.3s ease;
 }
 
 .quiz-container:hover {
+<<<<<<< HEAD
     box-shadow: 0 6px 35px rgba(0, 0, 0, 0.2);
 }
 
@@ -53,6 +70,9 @@ hr {
     border: none;
     height: 1px;
     background: linear-gradient(to right, transparent, #00d2ff, transparent);
+=======
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7);
+>>>>>>> eb6a04b1f80324e536804c0100bd3cfeb25effbf
 }
 
 /* Question Styling */
@@ -61,6 +81,7 @@ hr {
 }
 
 .question {
+<<<<<<< HEAD
     font-weight: 500;
     font-size: 1.3em;
     margin-bottom: 15px;
@@ -93,17 +114,62 @@ button {
 
 button:hover {
     background: rgba(255, 255, 255, 0.3);
+=======
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+/* Button Styling */
+button {
+    padding: 10px 25px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 1em;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: #0056b3;
+>>>>>>> eb6a04b1f80324e536804c0100bd3cfeb25effbf
     transform: translateY(-2px);
 }
 
 button:active {
     transform: translateY(0);
+<<<<<<< HEAD
+=======
+}
+
+/* Header Styling */
+h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #00e676;
+}
+
+/* Horizontal Rule Styling */
+hr {
+    opacity: 0.3;
+    margin-bottom: 20px;
+    border: none;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #00e676, transparent);
+>>>>>>> eb6a04b1f80324e536804c0100bd3cfeb25effbf
 }
 
 /* Badge Styling */
 .badge {
     max-width: 100px;
+<<<<<<< HEAD
     background-color: #8f9293;
+=======
+    background-color: #007BFF;
+>>>>>>> eb6a04b1f80324e536804c0100bd3cfeb25effbf
     color: #fff;
     border-radius: 12px;
     padding: 5px 10px;
@@ -121,7 +187,11 @@ button:active {
 
 /* Score Display Styling */
 .scores {
+<<<<<<< HEAD
     background: rgba(255, 255, 255, 0.1);
+=======
+    background-color: #1f1f1f;
+>>>>>>> eb6a04b1f80324e536804c0100bd3cfeb25effbf
     width: 60px;
     height: 25px;
     border-radius: 20px;
@@ -130,13 +200,19 @@ button:active {
     text-align: center;
     line-height: 25px;
     margin-bottom: 20px;
+<<<<<<< HEAD
     color: #00d2ff;
     border: 1px solid rgba(255, 255, 255, 0.3);
+=======
+    color: #00e676;
+    border: 2px solid #00e676;
+>>>>>>> eb6a04b1f80324e536804c0100bd3cfeb25effbf
 }
 
 /* Disabled Button Styling */
 .no-pointer {
     cursor: default !important;
+<<<<<<< HEAD
     background: rgba(255, 255, 255, 0.2) !important;
     color: #00d2ff !important;
 }
@@ -146,6 +222,20 @@ button:active {
     color: #00d2ff !important;
 }
 
+=======
+    border-color: inherit !important;
+    border: inherit !important;
+    font-weight: 800;
+}
+
+.no-pointer:hover {
+    background-color: inherit !important;
+    color: inherit !important;
+    border-color: inherit !important;
+    border: inherit !important;
+}
+
+>>>>>>> eb6a04b1f80324e536804c0100bd3cfeb25effbf
 /* Responsive Design */
 @media (max-width: 600px) {
     .quiz-container {
@@ -166,4 +256,8 @@ button:active {
         flex-direction: column;
         gap: 10px;
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> eb6a04b1f80324e536804c0100bd3cfeb25effbf
