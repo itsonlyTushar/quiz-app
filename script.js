@@ -234,10 +234,14 @@ let currentIndex = 0;
 function displayNewQues() {
   let currentQues = questions[currentIndex];
   question.innerHTML = `
+    <div class="myOptions">
     <p class="question">${currentQues.question}</p>
     <input type="radio" name="q1" value="a"> ${currentQues.options.a}<br>
     <input type="radio" name="q1" value="b"> ${currentQues.options.b}<br>
-    <input type="radio" name="q1" value="c"> ${currentQues.options.c}<br>`;
+    <input type="radio" name="q1" value="c"> ${currentQues.options.c}<br>
+    </div>
+    `;
+    
 }
 
 change.addEventListener('click', () => {

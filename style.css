@@ -9,25 +9,24 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-<<<<<<< HEAD
 }
 
 .head-container {
-
-
-
-    h2 {
-        color: #f4f4f4;
-    }
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.head-container h2 {
+    margin-right: 5px;
+    color: #f4f4f4;
 }
 
-=======
-    background-image: url(https://th.bing.com/th/id/R.077d2d3218e7aa95d1a84ffeb8e3c37f?rik=FxxXrjlkMIZJ9A&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fEEozfjG.jpg&ehk=anrzqVadGoW3km3KNitQbZx7Ct2SZ%2f1AijmnUilau7A%3d&risl=&pid=ImgRaw&r=0);
-    background-repeat: no-repeat;
-    background-position: center;
+.myOptions {
+    color: wheat;
+    font-weight: 700;
 }
 
->>>>>>> 3c9eab48bdd9e849e243364dca78fd1a19ab8e3c
+
 /* Container Styling */
 .quiz-container {
     max-width: 600px;
@@ -52,13 +51,8 @@ h2 {
     text-align: center;
     margin-bottom: 20px;
     font-weight: 600;
-<<<<<<< HEAD
-    margin-right: 4rem;
-=======
     margin-left: 6rem;
->>>>>>> 3c9eab48bdd9e849e243364dca78fd1a19ab8e3c
 }
-
 
 /* Horizontal Rule Styling */
 hr {
@@ -116,11 +110,7 @@ button:active {
 
 /* Badge Styling */
 .badge {
-<<<<<<< HEAD
-     
-=======
     width: 60px;
->>>>>>> 3c9eab48bdd9e849e243364dca78fd1a19ab8e3c
     background-color: #8f9293;
     color: #fff;
     border-radius: 12px;
@@ -148,11 +138,7 @@ button:active {
     font-weight: 600;
     text-align: center;
     line-height: 25px;
-<<<<<<< HEAD
-    margin: 5px;
-=======
     margin-bottom: 20px;
->>>>>>> 3c9eab48bdd9e849e243364dca78fd1a19ab8e3c
     color: #00d2ff;
     border: 1px solid rgba(255, 255, 255, 0.3);
 }
@@ -169,10 +155,6 @@ button:active {
     color: #00d2ff !important;
 }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 3c9eab48bdd9e849e243364dca78fd1a19ab8e3c
 /* Responsive Design */
 @media (max-width: 600px) {
     .quiz-container {
